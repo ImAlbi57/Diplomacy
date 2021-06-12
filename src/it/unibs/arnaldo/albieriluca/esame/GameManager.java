@@ -262,6 +262,7 @@ public class GameManager {
      * Method used to print the units in every nation
      */
     public void printUnits(){
+        System.out.println(GameStrings.UNITS);
         for (Nation nat : nations) {
             Unit unit = nat.getUnit();
             if(unit != null)

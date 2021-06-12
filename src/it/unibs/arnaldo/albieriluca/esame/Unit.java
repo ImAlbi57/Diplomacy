@@ -2,6 +2,7 @@ package it.unibs.arnaldo.albieriluca.esame;
 
 /***
  * Class used for units, it just contains their type
+ * @author AlbieriLuca
  */
 public class Unit {
     private UnitType unitType;

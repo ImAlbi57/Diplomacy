@@ -6,6 +6,8 @@ package it.unibs.arnaldo.albieriluca.esame;
  */
 public class GameStrings {
     public static final String FILE_PATH = "XML/standard_map.xml";
+    public static final String BENVENUTO = "BENVENUTO IN DIPLOMACY!\nPreparati a giocare!\n";
+    public static final String UNITS = "ELENCO DELLE TUE UNITA' PRESENTI SULLA MAPPA";
     public static final String inputMoves = "\n>INSERISCI LE MOSSE CHE VUOI ESEGUIRE ('STOP' per terminare, nessun istruzione per uscire dal gioco):";
     public static final String H = "H";
     public static final String A = "A";

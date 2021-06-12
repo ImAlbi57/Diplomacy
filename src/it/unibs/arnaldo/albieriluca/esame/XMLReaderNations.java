@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /***
  * Class to initialize and manage the reading of the input XML file
- * @author ToBdefined
+ * @author AlbieriLuca
  */
 public class XMLReaderNations {
 

@@ -2,6 +2,7 @@ package it.unibs.arnaldo.albieriluca.esame;
 
 /***
  * Class that describes a nation
+ * @author AlbieriLuca
  */
 public class Nation {
     private String name;
