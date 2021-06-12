@@ -1,22 +1,18 @@
 package it.unibs.arnaldo.albieriluca.esame;
 
-import java.util.ArrayList;
-
+/***
+ * Main class of the Diplomacy Game
+ * @author AlbieriLuca
+ */
 public class DiplomacyMain {
-    public static void main(String[] args) {
-        int[][] adiacenza = {
-                {0,1,0,1},
-                {1,0,1,0},
-                {0,1,0,1},
-                {1,0,1,0},
-        };
-        ArrayList<Nation> nazioni = new ArrayList<>();
-        nazioni.add(new Nation("WEE", Type.LAND));
-        nazioni.add(new Nation("NOM", Type.LAND));
-        nazioni.add(new Nation("LOL", Type.LAND));
-        nazioni.add(new Nation("SUS", Type.LAND));
 
-        GameManager game = new GameManager(nazioni, adiacenza);
+    public static void main(String[] args) {
+        XMLReaderNations xmlr = new XMLReaderNations(GameStrings.FILE_PATH);
+        xmlr.read();
+
+        GameManager game = new GameManager(xmlr.getNations(), xmlr.getAdjacency());
+
+        game.printUnits();
 
         game.startGame();
     }
