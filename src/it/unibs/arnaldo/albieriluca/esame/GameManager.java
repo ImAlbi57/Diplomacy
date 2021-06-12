@@ -226,6 +226,7 @@ public class GameManager {
             if(holds.size() == 1)
                 System.out.println(holds.get(0).getStart() + GameStrings.NON_MUOVE);
             else{
+                System.out.println();
                 System.out.print(GameStrings.NAZIONI);
                 for (Move m : holds)
                     System.out.print('"' + m.getStart() + '"' + " ");
